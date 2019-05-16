@@ -9,21 +9,21 @@ pipeline{
             }
            
         }
-        stage("Check"){
-            failFast false
-            parallel {
-                stage ("JUnit"){
-                    steps{
-                        sh "mvn test"
-                    }
-                }
-                stage ("PMD"){
-                    steps{
-                        sh "mvn pmd:pmd"
-                    }
-                }
-            } 
-        }
+        // stage("Check"){
+        //     failFast false
+        //     parallel {
+        //         stage ("JUnit"){
+        //             steps{
+        //                 sh "mvn test"
+        //             }
+        //         }
+        //         stage ("PMD"){
+        //             steps{
+        //                 sh "mvn pmd:pmd"
+        //             }
+        //         }
+        //     } 
+        // }
         stage("Container"){
             steps{
                 echo "Using spotify plugin"
@@ -32,7 +32,8 @@ pipeline{
         }
         stage("Deploy"){
             steps{
-                sh "mvn deploy -s settings.xml"
+                // sh "mvn deploy -s settings.xml"
+                sh "mvn build -Dmaven.test.failure.ignore=true"
             }
            
         }
