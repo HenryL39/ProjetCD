@@ -39,7 +39,7 @@ pipeline{
         }
         stage("Release"){
             steps{
-                sh "mvn clean -DskipTests -Darguments=-DskipTests release:clean release:prepare release:perform"
+                sh "mvn clean -DskipTests -Darguments=-DskipTests -s settings.xml release:clean release:prepare release:perform"
             }
            
         }
