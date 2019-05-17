@@ -20,6 +20,13 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>12</java.version>
 	</properties>
+	
+	<scm>
+		<connection>scm:git:ssh://rsnip@github.com:HenryL39/ProjetCD.git</connection>
+		<developerConnection>scm:git:ssh://rsnip@github.com:HenryL39/ProjetCD.git</developerConnection>
+		<url>git:ssh://rsnip@github.com:HenryL39/ProjetCD.git</url>
+		<tag>HEAD</tag>
+  	</scm>
 
 	<dependencies>
 		<dependency>
@@ -65,13 +72,26 @@
 				<version>3.12.0</version>
       		</plugin>
 
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.4.2</version>
+				<configuration>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+				</configuration>
+      		</plugin>
+
 		</plugins>
 	</build>
 	<distributionManagement>
-	   <snapshotRepository>
+	   	<snapshotRepository>
 	      <id>nexus-snapshots</id>
 	      <url>http://192.168.100.50:8081/repository/maven-snapshots/</url>
-	   </snapshotRepository>
+	  	 </snapshotRepository>
+	   	<repository>
+			<id>nexus-releases</id>
+			<name>devops-app-01-releases</name>
+			<url>http://192.168.100.50:8081/repository/maven-releases/</url>
+    	</repository>
 </distributionManagement>
 
 </project>
