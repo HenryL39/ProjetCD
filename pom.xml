@@ -84,11 +84,11 @@
 	</build>
 	<distributionManagement>
 	   	<snapshotRepository>
-	      <id>nexus-snapshots</id>
+	      <id>nexus</id>
 	      <url>http://192.168.100.50:8081/repository/maven-snapshots/</url>
 	  	 </snapshotRepository>
 	   	<repository>
-			<id>nexus-releases</id>
+			<id>nexus</id>
 			<name>devops-app-01-releases</name>
 			<url>http://192.168.100.50:8081/repository/maven-releases/</url>
     	</repository>
