@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.wunderit</groupId>
 	<artifactId>projetcd</artifactId>
-	<version>1.2</version>
+	<version>1.3-SNAPSHOT</version>
 	<name>projetcd</name>
 	<description>Application for CD Project</description>
 	<packaging>war</packaging>
@@ -24,7 +24,7 @@
 		<connection>scm:git:git@github.com:HenryL39/ProjetCD.git</connection>
 		<!-- <developerConnection>scm:git:ssh://rsnip@github.com/HenryL39/ProjetCD.git</developerConnection> -->
 		<url>http://github.com/HenryL39/ProjetCD</url>
-		<tag>projetcd-1.2</tag>
+		<tag>HEAD</tag>
   	</scm>
 
 	<dependencies>
