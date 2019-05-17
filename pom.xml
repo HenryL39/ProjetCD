@@ -22,9 +22,9 @@
 	</properties>
 	
 	<scm>
-		<connection>scm:git:ssh://rsnip@github.com/HenryL39/ProjetCD.git</connection>
-		<developerConnection>scm:git:ssh://rsnip@github.com/HenryL39/ProjetCD.git</developerConnection>
-		<url>git:ssh://rsnip@github.com/HenryL39/ProjetCD.git</url>
+		<connection>scm:git:git@github.com:HenryL39/ProjetCD.git</connection>
+		<!-- <developerConnection>scm:git:ssh://rsnip@github.com/HenryL39/ProjetCD.git</developerConnection> -->
+		<url>http://github.com/HenryL39/ProjetCD</url>
 		<tag>HEAD</tag>
   	</scm>
 
